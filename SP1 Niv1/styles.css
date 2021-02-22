@@ -1,0 +1,165 @@
+* {
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.navigation-tab {
+  background-color: #000;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.menu {
+  background-color: #2d4059;
+  display: flex;
+  flex-flow: row nowrap;
+  height: 100px;
+  align-items: center;
+}
+
+.logo {
+  background-color: #ea5455;
+  flex: 1 1 auto;
+  height: 30px;
+}
+
+.nav-links {
+  background-color: #ea5455;
+  flex: 5 1 auto;
+  height: 30px;
+}
+
+.social-icons {
+  background-color: #ea5455;
+  flex: 1 1 auto;
+  height: 30px;
+}
+.text {
+  background-color: #f07b3f;
+}
+h1 {
+  background-color: #ffd460;
+}
+
+.section {
+  background-color: #000;
+  display: flex;
+}
+
+.articles {
+  background-color: #4e4e6a;
+  flex: 2 1 auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.article {
+  background-color: #1f6cb0;
+  flex: 1 1 40%;
+}
+
+.footer {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+}
+.footer-tab {
+  background-color: #e6af2e;
+  width: 300px;
+}
+.navigation {
+  background-color: #70a3c4;
+  flex: 1 1 100%;
+}
+.side-bar {
+  background-color: #f73f52;
+  flex: 1 1 auto;
+}
+
+.publicity {
+  background-color: #ffea85;
+}
+
+@media all and (max-width: 800px) {
+  .section {
+    flex-direction: column;
+  }
+
+  .menu {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .side-bar {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* TABLET*/
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .section {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #ffea85;
+  }
+
+  .side-bar {
+    flex: 1 1 100%;
+  }
+
+  .footer-tab {
+    width: 100%;
+  }
+}
+
+/*PHONES AND SMALL TABLETS TILL 767*/
+@media only screen and (max-width: 767px) and (min-width: 480px) {
+  .logo,
+  .nav-links,
+  .social-icons {
+    width: 95%;
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(225, 125, 180, 0.886),
+      rgb(120, 18, 74)
+    );
+  }
+  .articles {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: rgb(22, 80, 104);
+  }
+  .article,
+  .navigation {
+    flex: 1 1 100%;
+    height: 30px;
+    background-color: rgb(124, 239, 247);
+  }
+  .navigation {
+    background-color: aquamarine;
+  }
+  .section {
+    background-color: #ffea85;
+  }
+  .side-bar {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #f07b3f;
+  }
+  .publicity {
+    flex: 1 1 100%;
+    height: 30px;
+  }
+
+  .footer-tab {
+    height: 30px;
+    width: 93%;
+  }
+}
